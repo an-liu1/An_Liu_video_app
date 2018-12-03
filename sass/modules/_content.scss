@@ -1,0 +1,71 @@
+ul { width: 90; margin: 0 auto; text-align: center; padding-top: 20px; }
+ul li { display: inline-block; padding: 0 8px; }
+
+a {
+  text-decoration: none;
+}
+
+.back-home {
+  color: white;
+  margin-bottom: 16px;
+  display: block;
+  padding-left: 8px;
+}
+
+a img { width: 180px; border: thin solid rgba(255, 255, 255, 0.8); border-radius: 4px; margin-bottom: 6px; }
+
+video { width: 100% }
+
+.instructions { padding-top: 45px; text-align: center; font-size: 1.8em; }
+
+.hidden-movies {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: all 0.7s;
+  max-height: 0;
+ }
+ 
+ .show-movie, .lightbox { max-height: 1200px; }
+
+ .more-details { 
+    display: block;
+    padding: 7px 8px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 8px;
+    background: orange;
+    color: white; 
+  }
+.movie-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 100px;
+ }
+
+.movie-details {
+  padding-left: 12px;
+  padding-top: 12px;
+  margin-bottom: 40px;
+}
+
+.movie-details h3 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.movie-details p { text-align: center; }
+
+.up-arrow { text-align: center }
+
+.up-arrow span {
+  font-size: 2em;
+  padding: 8px 15px 8px;
+  border-radius: 50%;
+  font-weight: bolder;
+  background-color: rgba(255,255,255,0.2);
+  cursor: pointer;
+  display: none;
+}
+
+.show-scroller {display: inline-block !important; }
