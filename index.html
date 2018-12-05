@@ -17,11 +17,7 @@
         <ul>
             <li v-for="video in videodata">
                 <button class="more-details" v-on:click="fetchMore" :href="video.thumbnails">More Details...</button>
-				<div :class="{'show-detail' : openLightbox }">
-				<button class="close-button" type="button"><span >&times;</span></button>
-				<img :src="'images/' + imageSource" alt="img" style="width: 280px;">
-				<p style="width: 280px;">{{ videosyn }}</p>
-                </div>
+				
                 
 
                 <a :href="video.vid_path" v-on:click="loadMovie">
@@ -31,7 +27,11 @@
                 <!-- add a field to the DB (or subquery another table) and plug data in -->
             </li>
         </ul>
-
+        <section :class="{'show-detail' : openLightbox }" style="overflow: hidden;">
+             <button v-on:click="closeDetails" style="font-size:2em;color:white;float: right;margin-right: 10px;">X</button>
+            <img :src="'images/' + imageSource" alt="img" style="width: 280px;margin: 0 auto; display: block;">
+            <p style="text-align:center;">{{ videosyn }}</p>
+        </section>
         <p class="instructions">
             <i>Click on a poster to preview the movie!</i>
         </p>

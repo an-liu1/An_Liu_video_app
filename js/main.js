@@ -27,11 +27,12 @@
                 currentData = this.videodata.filter(video => video.thumbnails === imgData);
                 this.videosyn = currentData[0].synopsis;
                 this.imageSource = currentData[0].thumbnails;
-                if(this.openLightbox === false) {
-                    this.openLightbox = true;
-                }else {
-                    this.openLightbox = false;
-                }
+                this.openLightbox = true;
+            },
+
+            closeDetails(){
+               //debugger;
+                this.openLightbox = false;
             },
 
             loadMovie(e) {
