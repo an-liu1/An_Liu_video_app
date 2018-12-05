@@ -27,9 +27,9 @@
                 <!-- add a field to the DB (or subquery another table) and plug data in -->
             </li>
         </ul>
-        <section :class="{'show-detail' : openLightbox }" style="overflow: hidden;">
-             <button v-on:click="closeDetails" style="font-size:2em;color:white;float: right;margin-right: 10px;">X</button>
-            <img :src="'images/' + imageSource" alt="img" style="width: 280px;margin: 0 auto; display: block;">
+        <section class="hidden-detail" :class="{'show-detail' : openLightbox }">
+             <button v-on:click="closeDetails" class="xButton">X</button>
+            <img :src="'images/' + imageSource" alt="img">
             <p style="text-align:center;">{{ videosyn }}</p>
         </section>
         <p class="instructions">
