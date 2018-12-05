@@ -18,15 +18,21 @@ video { width: 100% }
 
 .instructions { padding-top: 45px; text-align: center; font-size: 1.8em; }
 
-.hidden-movies {
+.hidden-movies, .hidden-detail {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
   transition: all 0.7s;
   max-height: 0;
  }
+ .xButton {
+  font-size:2em;color:white;float: right;margin-right: 10px;cursor: pointer;
+ }
+ .hidden-detail img {
+  width: 280px;margin: 0 auto; display: block;
+ }
  
- .show-movie, .lightbox { max-height: 1200px; }
+ .show-movie, .show-detail { max-height: 1200px; }
 
  .more-details {
     display: block;
